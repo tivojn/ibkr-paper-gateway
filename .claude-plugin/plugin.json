@@ -1,0 +1,12 @@
+{
+  "name": "ibkr-paper-gateway",
+  "version": "0.1.0",
+  "description": "Interactive Brokers PAPER trading (unofficial): automated paper orders through your local IB Gateway (paper login). Refuses live ports and live accounts; preview + confirm for every order, limits and an audit log.",
+  "author": {
+    "name": "Adam Cohen"
+  },
+  "homepage": "https://github.com/tivojn/ibkr-paper-gateway",
+  "repository": "https://github.com/tivojn/ibkr-paper-gateway",
+  "license": "MIT",
+  "keywords": ["ibkr", "interactive-brokers", "paper-trading", "ib-gateway", "finance", "mcp"]
+}

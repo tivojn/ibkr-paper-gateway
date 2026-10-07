@@ -1,0 +1,19 @@
+{
+  "name": "ibkr-paper-gateway",
+  "description": "Marketplace for the ibkr-paper-gateway plugin.",
+  "owner": {
+    "name": "Adam Cohen"
+  },
+  "plugins": [
+    {
+      "name": "ibkr-paper-gateway",
+      "description": "Interactive Brokers PAPER trading (unofficial) through your local IB Gateway: quotes, history, positions and paper orders with preview + confirm, limits and an audit log. Live ports and live accounts are refused.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Adam Cohen"
+      },
+      "source": "./",
+      "category": "finance"
+    }
+  ]
+}

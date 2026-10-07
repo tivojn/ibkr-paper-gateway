@@ -1,0 +1,29 @@
+{
+  "name": "ibkr-paper-gateway",
+  "version": "0.1.0",
+  "description": "Unofficial IBKR PAPER trading through your local IB Gateway (paper login): read accounts, positions, quotes and history, and place paper orders with a preview, explicit confirmation, limits and an audit log. Live ports (4001/7496) and live accounts are refused.",
+  "author": {
+    "name": "Adam Cohen",
+    "url": "https://github.com/tivojn"
+  },
+  "homepage": "https://github.com/tivojn/ibkr-paper-gateway",
+  "repository": "https://github.com/tivojn/ibkr-paper-gateway",
+  "license": "MIT",
+  "keywords": ["ibkr", "interactive-brokers", "paper-trading", "ib-gateway", "trading", "mcp"],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "IBKR Paper (IB Gateway)",
+    "shortDescription": "Paper-trade on IBKR through your local IB Gateway",
+    "longDescription": "Connects to IB Gateway or TWS running on your own computer (127.0.0.1) with your IBKR PAPER login. Your assistant can read balances, positions, P&L, quotes (delayed if you have no subscription), price history, open orders and executions, and place, modify and cancel orders on your IBKR paper account. Every order is previewed first (plain read-back, estimated notional and commission from IBKR's what-if check) and needs explicit confirmation. Before every order, modification or cancel it asks the Gateway for its accounts again and refuses unless every account is a paper account (DU…/DF…). Live API ports are refused outright. Per-order quantity and notional limits, an orders-per-minute limit and a local audit log apply. You log in to IB Gateway yourself; this plugin never handles credentials. Unofficial; not affiliated with Interactive Brokers. Not financial advice.",
+    "developerName": "Adam Cohen",
+    "category": "Finance",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://github.com/tivojn/ibkr-paper-gateway",
+    "defaultPrompt": [
+      "Check my IB Gateway paper connection",
+      "What's my paper account balance and positions?",
+      "Quote AAPL and show today's hourly bars",
+      "Buy 10 AAPL at market on paper"
+    ]
+  }
+}
